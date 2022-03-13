@@ -1,0 +1,16 @@
+
+/* theme list item */
+
+.theme-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.theme-container span {
+    font-weight: bold;
+}
+
+.theme-container h2, p {
+    padding: 0.3em 0 0.2em;
+    margin: 0;
+}
