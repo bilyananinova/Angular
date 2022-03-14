@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ITheme } from '../interfaces/theme';
 
 @Component({
   selector: 'app-theme-item',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThemeItemComponent implements OnInit {
 
+  @Input() theme!: ITheme;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.theme);
+    
   }
-
 }
