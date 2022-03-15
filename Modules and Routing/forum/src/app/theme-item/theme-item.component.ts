@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ITheme } from '../interfaces/theme';
 
 @Component({
@@ -6,14 +6,9 @@ import { ITheme } from '../interfaces/theme';
   templateUrl: './theme-item.component.html',
   styleUrls: ['./theme-item.component.css']
 })
-export class ThemeItemComponent implements OnInit {
+export class ThemeItemComponent{
 
   @Input() theme!: ITheme;
 
   constructor() { }
-
-  ngOnInit(): void {
-    console.log(this.theme);
-    
-  }
 }

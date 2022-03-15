@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IPost } from '../interfaces/post';
+import { PostService } from '../post.service';
 
 @Component({
   selector: 'app-aside',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AsideComponent implements OnInit {
 
-  constructor() { }
+  posts: IPost[] = [];
+
+  constructor(public postService: PostService) { }
 
   ngOnInit(): void {
+    this.postService.getLastPosts().subscribe(p => {
+      this.posts = p;
+    })
   }
 
 }

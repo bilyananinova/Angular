@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IPost } from '../interfaces/post';
 
 @Component({
   selector: 'app-aside-item',
   templateUrl: './aside-item.component.html',
   styleUrls: ['./aside-item.component.css']
 })
-export class AsideItemComponent implements OnInit {
+export class AsideItemComponent {
+  @Input() post!: IPost;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

@@ -12,6 +12,7 @@ import { ThemeComponent } from './theme/theme.component';
 import { ThemeItemComponent } from './theme-item/theme-item.component';
 import { UserService } from './user.service';
 import { ThemeService } from './theme.service';
+import { PostService } from './post.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ThemeService } from './theme.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [UserService, ThemeService],
+  providers: [UserService, ThemeService, PostService],
   bootstrap: [AppComponent, HeaderComponent, FooterComponent]
 })
 export class AppModule { }
