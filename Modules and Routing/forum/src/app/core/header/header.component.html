@@ -3,20 +3,24 @@
         <div class="logo-wrap">
             <p class="logo"><span class="logo">SoftUni Forum</span></p>
         </div>
-        <div class="mini-navbar" *ngIf="!userService.isLogged">
-            <ul>
-                <li>
-                    <a href="#" (click)=loginHandler()>Login</a>
-                </li>
-                <li>
-                    <a href="#">Register</a>
-                </li>
-            </ul>
-        </div>
         <div class="mini-navbar" *ngIf="userService.isLogged">
             <ul>
                 <li>
-                    <a href="#" (click)=logoutHandler()>Logout</a>
+                    <a href="#">John's profile</a>
+                </li>
+                <li>
+                    <a href="#" (click)="logoutHandler()">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mini-navbar" *ngIf="!userService.isLogged">
+            <ul>
+                <li>
+                    <a href="#" (click)="loginHandler()">Login</a>
+                </li>
+                <li>
+                    <a href="#">Register</a>
                 </li>
             </ul>
         </div>

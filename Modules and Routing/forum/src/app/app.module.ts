@@ -6,13 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AsideComponent } from './aside/aside.component';
 import { AsideItemComponent } from './aside-item/aside-item.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
 import { ThemeComponent } from './theme/theme.component';
 import { ThemeItemComponent } from './theme-item/theme-item.component';
-import { UserService } from './user.service';
-import { ThemeService } from './theme.service';
-import { PostService } from './post.service';
+import { UserService } from './user/user.service';
+import { ThemeService } from './theme/theme.service';
+import { PostService } from './aside/post.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { PostService } from './post.service';
     HeaderComponent,
     FooterComponent,
     ThemeComponent,
-    ThemeItemComponent,
+    ThemeItemComponent
   ],
   imports: [
     BrowserModule,

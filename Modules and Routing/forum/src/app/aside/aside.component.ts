@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IPost } from '../interfaces/post';
-import { PostService } from '../post.service';
+import { IPost } from '../shared/interfaces/post';
+import { PostService } from './post.service';
 
 @Component({
   selector: 'app-aside',

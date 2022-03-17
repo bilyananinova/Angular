@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IPost } from '../interfaces/post';
+import { IPost } from '../shared/interfaces/post';
 
 @Component({
   selector: 'app-aside-item',
