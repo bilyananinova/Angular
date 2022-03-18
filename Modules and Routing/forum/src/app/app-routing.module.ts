@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './user/login/login.component';
 import { NewThemeComponent } from './new-theme/new-theme.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ProfileComponent } from './profile/profile.component';
-import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './user/profile/profile.component';
+import { RegisterComponent } from './user/register/register.component';
 import { ThemeComponent } from './theme/theme.component';
+import { ThemeContentComponent } from './theme-content/theme-content.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'themes',
     component: ThemeComponent,
+  },
+  {
+    path: 'themes/:id',
+    component: ThemeContentComponent,
   },
   {
     path: 'new-theme',

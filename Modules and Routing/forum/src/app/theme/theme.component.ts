@@ -8,7 +8,7 @@ import { ThemeService } from './theme.service';
   styleUrls: ['./theme.component.css']
 })
 export class ThemeComponent implements OnInit {
-
+  
   themeList: ITheme[] = [];
 
   constructor(private themeService: ThemeService) { }

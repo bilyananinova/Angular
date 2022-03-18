@@ -10,4 +10,8 @@ export class ThemeService {
   getAll(): Observable<ITheme[]> {
     return this.http.get<ITheme[]>('http://localhost:3000/api/themes');
   }
+
+  getTheme(id: string): Observable<ITheme> {
+    return this.http.get<ITheme>(`http://localhost:3000/api/themes/${id}`);
+  }
 }

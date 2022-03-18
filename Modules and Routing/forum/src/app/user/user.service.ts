@@ -9,7 +9,6 @@ export class UserService {
 
   login(): void {
     this.isLogged = true;
-    
   }
 
   logout(): void {

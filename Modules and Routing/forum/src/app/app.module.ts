@@ -14,11 +14,12 @@ import { UserService } from './user/user.service';
 import { ThemeService } from './theme/theme.service';
 import { PostService } from './aside/post.service';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
 import { NewThemeComponent } from './new-theme/new-theme.component';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './user/profile/profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ThemeContentComponent } from './theme-content/theme-content.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RegisterComponent,
     NewThemeComponent,
     ProfileComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ThemeContentComponent
   ],
   imports: [
     BrowserModule,

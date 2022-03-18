@@ -11,4 +11,9 @@ export class ThemeItemComponent{
   @Input() theme!: ITheme;
 
   constructor() { }
+  
+  ngOnInit(): void {
+    console.log(this.theme);
+    
+  }
 }
