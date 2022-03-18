@@ -20,10 +20,6 @@ body {
     justify-content: space-evenly;
 }
 
-app-root {
-    display: flex;
-}
-
 h2 {
     text-align: center;
     border-bottom: 1px dashed #999;
