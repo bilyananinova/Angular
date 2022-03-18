@@ -3,43 +3,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { UserModule } from './user/user.module';
+import { CoreModule } from './core/core.module';
 
 import { AppComponent } from './app.component';
-import { AsideComponent } from './aside/aside.component';
-import { AsideItemComponent } from './aside-item/aside-item.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
-import { ThemeComponent } from './theme/theme.component';
-import { ThemeItemComponent } from './theme-item/theme-item.component';
-import { UserService } from './user/user.service';
-import { ThemeService } from './theme/theme.service';
-import { PostService } from './aside/post.service';
+import { ThemeService } from './themes/theme.service';
+import { PostService } from './themes/post.service';
 import { HomeComponent } from './home/home.component';
-import { NewThemeComponent } from './new-theme/new-theme.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ThemeContentComponent } from './theme-content/theme-content.component';
+import { ThemesModule } from './themes/themes.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AsideComponent,
-    AsideItemComponent,
-    HeaderComponent,
-    FooterComponent,
-    ThemeComponent,
-    ThemeItemComponent,
     HomeComponent,
-    NewThemeComponent,
     NotFoundComponent,
-    ThemeContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CoreModule,
     HttpClientModule,
     UserModule,
+    ThemesModule
   ],
-  providers: [UserService, ThemeService, PostService],
+  providers: [],
   bootstrap: [AppComponent, HeaderComponent, FooterComponent]
 })
 export class AppModule { }

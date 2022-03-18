@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ITheme } from '../shared/interfaces/theme';
-import { ThemeService } from '../theme/theme.service';
+import { ITheme } from '../../shared/interfaces/theme';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-theme-content',
